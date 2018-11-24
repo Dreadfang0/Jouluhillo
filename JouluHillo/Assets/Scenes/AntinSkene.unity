@@ -154,7 +154,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4429315861515480, guid: ff609b48127033e4c971365f6ca5c3ce, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.198
+      value: -2.57
       objectReference: {fileID: 0}
     - target: {fileID: 4429315861515480, guid: ff609b48127033e4c971365f6ca5c3ce, type: 2}
       propertyPath: m_LocalPosition.z
@@ -424,7 +424,7 @@ SpriteRenderer:
   m_Size: {x: 2.3703704, y: 0.30555555}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &1896252937
 Transform:
