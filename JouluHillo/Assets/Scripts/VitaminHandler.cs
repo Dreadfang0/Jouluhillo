@@ -52,6 +52,7 @@ public class VitaminHandler : MonoBehaviour {
             {
                 collision.GetComponent<Player>().VitaC += VitaValue;
             }
+            Destroy(gameObject);
         }
     }
 }
