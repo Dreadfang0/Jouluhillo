@@ -13,30 +13,13 @@ public class LevelGen : MonoBehaviour {
 
     GameObject lastTile;
 
-    Camera mainCamera;
-
-    public SpriteRenderer background;
-
-    List<GameObject> backgrounds;
-
-    //public LootBoxController lootBox;
-
-    GameObject lastBackground;
-
-    public float lootBoxRate; // How many loot boxes per block?
-
-    
+    Camera mainCamera;   
 
     // Use this for initialization
 
     void Awake()
     {
 
-        backgrounds = new List<GameObject>();
-
-        backgrounds.Add(background.gameObject);
-
-        lastBackground = background.gameObject;
 
 
 
@@ -75,14 +58,6 @@ public class LevelGen : MonoBehaviour {
 
         }
 
-        if (lastBackground.transform.position.x - mainCamera.transform.position.x < spawnAhead)
-
-        {
-
-            SpawnBackGround();
-
-        }
-
     }
 
     void SpawnTile()
@@ -104,12 +79,7 @@ public class LevelGen : MonoBehaviour {
 
         lastTile = newTile;
 
-        CheckForTrash();
-
-        //SpawnLootBox();
-
-        
-
+        CheckForTrash();      
     }
 
     void CheckForTrash()
@@ -120,81 +90,11 @@ public class LevelGen : MonoBehaviour {
         while (spawnedTiles[0].transform.position.x < mainCamera.transform.position.x - spawnAhead)
 
         {
-
             GameObject oldestTile = spawnedTiles[0];
 
             spawnedTiles.Remove(oldestTile);
 
             Destroy(oldestTile);
-
         }
-
-        while (backgrounds.Count > 0 && backgrounds[0].transform.position.x < mainCamera.transform.position.x - spawnAhead)
-
-        {
-
-            GameObject oldestBackground = backgrounds[0];
-
-            backgrounds.Remove(oldestBackground);
-
-            Destroy(oldestBackground);
-
-        }
-
     }
-
-    void SpawnBackGround()
-    {
-
-        GameObject newBackGround = Instantiate(background.gameObject);
-
-        newBackGround.transform.position = lastBackground.transform.position + background.bounds.size.x * Vector3.up;
-
-        backgrounds.Add(newBackGround);
-
-        lastBackground = newBackGround;
-
-    }
-    /*
-    void SpawnLootBox()
-    {
-
-        float tileWidth = lastTile.transform.localScale.x / 2f;
-
-        int maxTries = 20;
-
-
-
-        for (var j = 0; j < lootBoxRate; ++j)
-
-        {
-
-            for (int i = 0; i < maxTries; i++)
-
-            {
-
-                Vector3 rayStartPos = lastTile.transform.position + lastTile.transform.localScale.y / 2 * Vector3.up + Random.Range(-tileWidth, tileWidth) * Vector3.right;
-
-                RaycastHit2D ray = Physics2D.Raycast(rayStartPos, Vector2.down, spawnAhead);
-
-                if (ray.collider != null && ray.collider.tag == "ground")
-
-                {
-
-                    GameObject newBox = Instantiate(lootBox.gameObject, ray.point + 0.4f * Vector2.up, Quaternion.identity);
-
-                    newBox.transform.parent = lastTile.transform;
-
-                    break;
-
-                }
-
-            }
-
-        }
-
-
-
-    }
-    */
 }

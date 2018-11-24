@@ -24,7 +24,7 @@ public class Player : MonoBehaviour {
 	void Update ()
     {
      
-		if(Input.GetKey("space") && IsGrounded == true)
+		if(Input.GetKeyDown("space") && IsGrounded == true)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpForce));
             IsGrounded = false;
