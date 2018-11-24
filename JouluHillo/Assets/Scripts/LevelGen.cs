@@ -34,9 +34,9 @@ public class LevelGen : MonoBehaviour {
 
         backgrounds = new List<GameObject>();
 
-        //backgrounds.Add(background.gameObject);
+        backgrounds.Add(background.gameObject);
 
-        //lastBackground = background.gameObject;
+        lastBackground = background.gameObject;
 
 
 
@@ -75,7 +75,7 @@ public class LevelGen : MonoBehaviour {
 
         }
 
-        //if (lastBackground.transform.position.x - mainCamera.transform.position.x < spawnAhead)
+        if (lastBackground.transform.position.x - mainCamera.transform.position.x < spawnAhead)
 
         {
 
