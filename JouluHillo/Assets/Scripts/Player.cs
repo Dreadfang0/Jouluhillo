@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
+    public int VitaA;
+    public int VitaB;
+    public int VitaC;
+
     bool IsGrounded = false;
     Rigidbody2D rb2D;
+
     [SerializeField]
     float JumpForce;
 
