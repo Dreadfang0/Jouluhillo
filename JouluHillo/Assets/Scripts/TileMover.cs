@@ -11,7 +11,7 @@ public class TileMover : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void Update ()
+	void FixedUpdate ()
     {
         transform.Translate(ScrollSpeed, 0 ,0);
 	}

@@ -94,7 +94,7 @@ public class LevelGen : MonoBehaviour {
 
         spawnedTiles.Add(newTile);
 
-        float tileInterval = lastTile.transform.localScale.x / 2f + newTile.transform.localScale.x / 2f - 0.5f;
+        float tileInterval = lastTile.transform.localScale.x / 2f + newTile.transform.localScale.x / 2 * 30.6f;
 
         newTile.transform.position = lastTile.transform.position;
 
