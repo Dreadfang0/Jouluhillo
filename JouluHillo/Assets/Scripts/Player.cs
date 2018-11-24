@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class Player : MonoBehaviour {
 
-    public int VitaA;
-    public int VitaB;
-    public int VitaC;
-
+    public float VitaA;
+    public float VitaB;
+    public float VitaC;
+    [SerializeField]
+    int VitaminConsumption;
     bool IsGrounded = false;
     Rigidbody2D rb2D;
 
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour {
     {
         //Debug.DrawLine(new Vector2(transform.position.x, transform.position.y), new Vector2(0,0));
         //RaycastHit2D GroundTrigger = Physics2D.BoxCast(new Vector2(transform.position.x, transform.position.y), new Vector2(1,1), 0f, new Vector2(0, -2));
+       
     }
 
 }

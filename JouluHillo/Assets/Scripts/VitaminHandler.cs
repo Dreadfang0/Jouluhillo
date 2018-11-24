@@ -10,7 +10,7 @@ public class VitaminHandler : MonoBehaviour {
     public Sprite VitaminASprite;
     public Sprite VitaminBSprite;
     public Sprite VitaminCSprite;
-    public int VitaValue;
+    public float VitaValue;
     // Use this for initialization
     void Start ()
     {
