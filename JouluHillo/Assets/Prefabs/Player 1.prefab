@@ -204,7 +204,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1623302359563304}
   m_LocalRotation: {x: 0.67863286, y: 0.1986391, z: -0.67863286, w: 0.1986391}
-  m_LocalPosition: {x: 0.04, y: 0.07, z: -0.44}
+  m_LocalPosition: {x: 0.021, y: 0.032, z: -0.44}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4115079362766906}
@@ -420,7 +420,6 @@ MonoBehaviour:
   VitaminBBar: {fileID: 0}
   VitaminCBar: {fileID: 0}
   VitaminConsumption: 2
-  FireOverlay: {fileID: 1865450804516482}
   Fire: {fileID: 1644208451165158}
   Shit: {fileID: 1088909327609812}
   Vomit: {fileID: 1623302359563304}
