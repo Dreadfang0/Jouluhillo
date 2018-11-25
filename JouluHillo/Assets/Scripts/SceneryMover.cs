@@ -7,12 +7,20 @@ public class SceneryMover : MonoBehaviour {
     private Rigidbody2D rb2d;
     float SetPieceLenght;
 
+    GameObject Player;
+
     [SerializeField]
-    float speed = 1f;
+    float StartSpeed = 1f;
+
+    float speed;
+    float cSpeed;
 
     // Use this for initialization
     void Start()
     {
+        speed = StartSpeed;
+        Player = GameObject.FindWithTag("Player");
+
         SetPieceLenght = GetComponent<SpriteRenderer>().bounds.size.x / 4;
         rb2d = GetComponent<Rigidbody2D>();
         rb2d.velocity = new Vector2(-speed, 0);
@@ -20,6 +28,10 @@ public class SceneryMover : MonoBehaviour {
 
     void Update()
     {
+        cSpeed = Player.GetComponent<Player>().Speed;
+
+        speed = speed + cSpeed;
+
         if (transform.position.x < -SetPieceLenght)
         {
             Vector2 groundOffSet = new Vector2(SetPieceLenght * 2f, 0);
