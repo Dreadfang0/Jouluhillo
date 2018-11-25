@@ -26,7 +26,7 @@ public class MenuScript : MonoBehaviour {
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Combined");
+        SceneManager.LoadScene("Testi");
         Debug.Log("Started game");
     }
 
