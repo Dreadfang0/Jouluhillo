@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
+    float NormSpeed;
+    float OverdoseSpeed;
+    public float Speed;
     [SerializeField]
     int MaxVitamin;
     [SerializeField]
@@ -55,6 +58,8 @@ public class Player : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
+        NormSpeed = Speed;
+        OverdoseSpeed = Speed * 2;
         rb2D = GetComponent<Rigidbody2D>();
 	}
 
@@ -118,14 +123,14 @@ public class Player : MonoBehaviour {
         }
         if (VitaC >= 80)
         {
-
+            Speed = OverdoseSpeed;
             //Apply Overdose
         }
         
         else if (VitaC >= 20)
         {
             VitaCBarImg.sprite = VitaCBarSprite;
-            
+            Speed = NormSpeed;
             //Deficiency gone
         }
         if (VitaA >= 20 && VitaB >= 20 && VitaC >= 20 && VitaA <= 80 && VitaB <= 80 )

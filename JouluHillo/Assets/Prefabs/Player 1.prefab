@@ -304,6 +304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f03ca3b25fb73c4285a7da85ac5748d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Speed: -0.1
   MaxVitamin: 100
   MinVitamin: 0
   VitaA: 50
