@@ -37,6 +37,7 @@ TextureImporter:
     21300064: SpriteSheet_27
     21300066: SpriteSheet_28
     21300068: TutorialTemple
+    21300070: BG_Hills2
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -800,13 +801,33 @@ TextureImporter:
         width: 512
         height: 136
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 2}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 0cad80bb95650b44db6a149a6b524751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BG_Hills2
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 138
+        width: 255
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b7c2a70a9abd54e977b0866954b00a
       vertices: []
       indices: 
       edges: []
