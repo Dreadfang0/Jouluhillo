@@ -39,6 +39,7 @@ TextureImporter:
     21300068: TutorialTemple
     21300070: BG_Hills2
     21300072: SpriteSheet_29
+    21300074: SpriteSheet_30
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -842,13 +843,33 @@ TextureImporter:
         width: 79
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 2839e358f045f394cbbb946bf2060b20
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 809
+        width: 163
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 636b2206166d5b746a3fd18c34efc9e9
       vertices: []
       indices: 
       edges: []
