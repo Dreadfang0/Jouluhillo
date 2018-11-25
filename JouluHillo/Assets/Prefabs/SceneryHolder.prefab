@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4701627030297430}
   - component: {fileID: 114914217296427428}
   - component: {fileID: 212317593011086716}
-  - component: {fileID: 114680092322085222}
   - component: {fileID: 50449231893588606}
   m_Layer: 0
   m_Name: Clouds
@@ -40,7 +39,6 @@ GameObject:
   - component: {fileID: 4323789692232758}
   - component: {fileID: 114632851164741414}
   - component: {fileID: 212319097165960266}
-  - component: {fileID: 114574706594227078}
   - component: {fileID: 50002263436952888}
   m_Layer: 0
   m_Name: FgClouds
@@ -59,7 +57,6 @@ GameObject:
   - component: {fileID: 4534277751364714}
   - component: {fileID: 114765166809531580}
   - component: {fileID: 212776907921933940}
-  - component: {fileID: 114465586788030800}
   - component: {fileID: 50928293432562942}
   m_Layer: 0
   m_Name: Hills1
@@ -78,7 +75,6 @@ GameObject:
   - component: {fileID: 4535755080150772}
   - component: {fileID: 114799513626726114}
   - component: {fileID: 212531116446234008}
-  - component: {fileID: 114973900726878312}
   - component: {fileID: 50351498634253632}
   m_Layer: 0
   m_Name: Mountains
@@ -97,7 +93,6 @@ GameObject:
   - component: {fileID: 4264695796043396}
   - component: {fileID: 114249411189593146}
   - component: {fileID: 212694678244426144}
-  - component: {fileID: 114581107340921194}
   - component: {fileID: 50191865624363010}
   m_Layer: 0
   m_Name: Hills2
@@ -144,7 +139,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1570644713660130}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4461514387788190}
@@ -346,39 +341,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartSpeed: 2.5
---- !u!114 &114465586788030800
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118776203916230}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1062c8e2689bae94fb1906608e939053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114574706594227078
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1118574431559632}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1062c8e2689bae94fb1906608e939053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &114581107340921194
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1458585453817780}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1062c8e2689bae94fb1906608e939053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114632851164741414
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -391,17 +353,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartSpeed: 1.75
---- !u!114 &114680092322085222
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1101324529912804}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1062c8e2689bae94fb1906608e939053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114765166809531580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -438,17 +389,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartSpeed: 1.55
---- !u!114 &114973900726878312
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1211510018623394}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1062c8e2689bae94fb1906608e939053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!212 &212216932893166196
 SpriteRenderer:
   m_ObjectHideFlags: 1
