@@ -32,6 +32,7 @@ TextureImporter:
     21300054: SpriteSheet_22
     21300056: SpriteSheet_23
     21300058: SpriteSheet_24
+    21300060: SpriteSheet_25
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -675,7 +676,7 @@ TextureImporter:
         width: 9
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -695,13 +696,33 @@ TextureImporter:
         width: 48
         height: 61
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
       spriteID: 1032fdfa923d8144598815816ae948cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 906
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 124a5f848be40834da6ee4f1db703303
       vertices: []
       indices: 
       edges: []
