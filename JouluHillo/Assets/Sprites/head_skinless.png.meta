@@ -1,9 +1,7 @@
 fileFormatVersion: 2
-guid: d1495f8a7d628c54bb0e8e5892028e14
+guid: 72fe0751886ed504c9c2c13f07a2a894
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: heads_sad_noteeth_0
-    21300002: heads_sad_noteeth_1
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -40,7 +38,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -137,51 +135,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: heads_sad_noteeth_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 1
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 19fa755660ce6f64fbbd6d1fd4a08216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: heads_sad_noteeth_1
-      rect:
-        serializedVersion: 2
-        x: 28
-        y: 1
-        width: 25
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 981199831e3d24642b0fd58e2a09c312
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7ec062cbd65bccf4aa85e6688e32f601
+    spriteID: 439b77d848ee3424bae23a1448c36a2f
     vertices: []
     indices: 
     edges: []

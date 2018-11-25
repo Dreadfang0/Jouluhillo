@@ -13,6 +13,18 @@ public class Player : MonoBehaviour {
     public float VitaB;
     public float VitaC;
     [SerializeField]
+    SpriteRenderer HeadRender;
+    [SerializeField]
+    Sprite HeadHappy;
+    [SerializeField]
+    Sprite HeadPuke;
+    [SerializeField]
+    Sprite HeadTooth;
+    [SerializeField]
+    Sprite HeadSkull;
+    [SerializeField]
+    Sprite HeadSad;
+    [SerializeField]
     Image VitaABarImg;
     [SerializeField]
     Image VitaBBarImg;
@@ -45,12 +57,12 @@ public class Player : MonoBehaviour {
     {
         rb2D = GetComponent<Rigidbody2D>();
 	}
-	
-	// Update is called once per frame
-	void Update ()
+
+    // Update is called once per frame
+    void Update()
     {
-     
-		if(Input.GetKeyDown("space") && IsGrounded == true)
+
+        if (Input.GetKeyDown("space") && IsGrounded == true)
         {
             gameObject.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpForce));
             IsGrounded = false;
@@ -65,28 +77,61 @@ public class Player : MonoBehaviour {
         if (VitaA <= 20f)
         {
             VitaABarImg.sprite = VitaGreyBarSprite;
+            
+            HeadRender.sprite = HeadSad;
+            Debug.Log("yeet!");
+            //apply Deficiency effect and whatnot
         }
-        else
+        if (VitaA >= 80)
+        {
+            HeadRender.sprite = HeadSkull;
+            //Apply Overdose
+        }
+        else if (VitaA >= 20)
         {
             VitaABarImg.sprite = VitaABarSprite;
+
+            //Deficiency gone
+            //Overdose gone
         }
         if (VitaB <= 20f)
         {
             VitaBBarImg.sprite = VitaGreyBarSprite;
+            HeadRender.sprite = HeadSad;
+            //apply Deficiency effect and whatnot
         }
-        else
+        if (VitaB >= 80)
+        {
+            HeadRender.sprite = HeadPuke;
+            //Apply Overdose
+        }
+        else if (VitaB >= 20)
         {
             VitaBBarImg.sprite = VitaBBarSprite;
+            //Deficiency gone
         }
         if (VitaC <= 20f)
         {
             VitaCBarImg.sprite = VitaGreyBarSprite;
+            HeadRender.sprite = HeadTooth;
+            //apply Deficiency effect and whatnot
         }
-        else
+        if (VitaC >= 80)
+        {
+
+            //Apply Overdose
+        }
+        
+        else if (VitaC >= 20)
         {
             VitaCBarImg.sprite = VitaCBarSprite;
+            
+            //Deficiency gone
         }
-
+        if (VitaA >= 20 && VitaB >= 20 && VitaC >= 20 && VitaA <= 80 && VitaB <= 80 )
+        {
+            HeadRender.sprite = HeadHappy;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
