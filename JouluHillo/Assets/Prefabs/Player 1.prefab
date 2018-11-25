@@ -158,7 +158,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1937747228947664}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.8347325, y: 0.85, z: 0}
+  m_LocalPosition: {x: -5.8347325, y: -2.0792165, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 1}
   m_Children:
   - {fileID: 4161859987992500}
@@ -425,6 +425,7 @@ MonoBehaviour:
   Vomit: {fileID: 1623302359563304}
   Teeth: {fileID: 1497723326746584}
   Skin: {fileID: 1033717579424552}
+  UI: {fileID: 0}
   JumpForce: 700
 --- !u!198 &198000422160489646
 ParticleSystem:

@@ -67,7 +67,9 @@ public class Player : MonoBehaviour {
     GameObject Teeth;
     [SerializeField]
     GameObject Skin;
-    
+
+    [SerializeField]
+    Animator UI;
     [SerializeField]
     float JumpForce;
 
@@ -171,6 +173,10 @@ public class Player : MonoBehaviour {
         }
         if (VitaA == 0 || VitaB == 0 || VitaC == 0 || VitaA == 100 || VitaB == 100)
         {
+            UI.SetBool("GameOver", true);
+            Speed = 0;
+            NormSpeed = 0;
+            OverdoseSpeed = 0;
             
         }
     }

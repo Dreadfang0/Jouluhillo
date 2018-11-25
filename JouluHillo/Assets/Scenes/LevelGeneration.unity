@@ -642,19 +642,6 @@ Prefab:
       propertyPath: VitaminCBar
       value: 
       objectReference: {fileID: 909110051}
-    - target: {fileID: 4818843786031180, guid: 78667873781cd3e408ca60dca62786cd, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0.021
-      objectReference: {fileID: 0}
-    - target: {fileID: 4818843786031180, guid: 78667873781cd3e408ca60dca62786cd, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0.032
-      objectReference: {fileID: 0}
-    - target: {fileID: 114176780269541426, guid: 78667873781cd3e408ca60dca62786cd,
-        type: 2}
-      propertyPath: FireOverlay
-      value: 
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78667873781cd3e408ca60dca62786cd, type: 2}
   m_IsPrefabParent: 0
