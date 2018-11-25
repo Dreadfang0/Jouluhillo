@@ -17,6 +17,7 @@ public class Player : MonoBehaviour {
     public float VitaC;
     [SerializeField]
     SpriteRenderer HeadRender;
+
     [SerializeField]
     Sprite HeadHappy;
     [SerializeField]
@@ -27,12 +28,14 @@ public class Player : MonoBehaviour {
     Sprite HeadSkull;
     [SerializeField]
     Sprite HeadSad;
+
     [SerializeField]
     Image VitaABarImg;
     [SerializeField]
     Image VitaBBarImg;
     [SerializeField]
     Image VitaCBarImg;
+
     [SerializeField]
     Sprite VitaABarSprite;
     [SerializeField]
@@ -41,6 +44,7 @@ public class Player : MonoBehaviour {
     Sprite VitaCBarSprite;
     [SerializeField]
     Sprite VitaGreyBarSprite;
+
     [SerializeField]
     Slider VitaminABar;
     [SerializeField]
@@ -48,10 +52,22 @@ public class Player : MonoBehaviour {
     [SerializeField]
     Slider VitaminCBar;
     [SerializeField]
+
     int VitaminConsumption;
     bool IsGrounded = false;
     Rigidbody2D rb2D;
 
+    [SerializeField]
+    GameObject Fire;
+    [SerializeField]
+    GameObject Shit;
+    [SerializeField]
+    GameObject Vomit;
+    [SerializeField]
+    GameObject Teeth;
+    [SerializeField]
+    GameObject Skin;
+    
     [SerializeField]
     float JumpForce;
 
@@ -85,57 +101,77 @@ public class Player : MonoBehaviour {
             
             HeadRender.sprite = HeadSad;
             Debug.Log("yeet!");
+            Skin.SetActive(false);
             //apply Deficiency effect and whatnot
         }
         if (VitaA >= 80)
         {
             HeadRender.sprite = HeadSkull;
-            //Apply Overdose
+            Skin.SetActive(true);
         }
         else if (VitaA >= 20)
         {
-            VitaABarImg.sprite = VitaABarSprite;
-
             //Deficiency gone
-            //Overdose gone
+            VitaABarImg.sprite = VitaABarSprite;
+            if (VitaA <= 80)
+            {
+                Skin.SetActive(false);
+            }
+            
         }
         if (VitaB <= 20f)
         {
             VitaBBarImg.sprite = VitaGreyBarSprite;
             HeadRender.sprite = HeadSad;
-            //apply Deficiency effect and whatnot
+            Fire.SetActive(true);
+            Shit.SetActive(false);
+            Vomit.SetActive(false);
+
         }
         if (VitaB >= 80)
         {
             HeadRender.sprite = HeadPuke;
-            //Apply Overdose
+            Shit.SetActive(true);
+            Vomit.SetActive(true);
+            Fire.SetActive(false);
         }
         else if (VitaB >= 20)
         {
             VitaBBarImg.sprite = VitaBBarSprite;
-            //Deficiency gone
+            Shit.SetActive(false);
+            Vomit.SetActive(false);
+            if (VitaB <= 80)
+            {
+                Fire.SetActive(false);
+                
+            }
         }
         if (VitaC <= 20f)
         {
             VitaCBarImg.sprite = VitaGreyBarSprite;
             HeadRender.sprite = HeadTooth;
-            //apply Deficiency effect and whatnot
+            Teeth.SetActive(true);
+            
         }
         if (VitaC >= 80)
         {
             Speed = OverdoseSpeed;
-            //Apply Overdose
+            //Apply Sanic Theme
         }
         
         else if (VitaC >= 20)
         {
             VitaCBarImg.sprite = VitaCBarSprite;
             Speed = NormSpeed;
-            //Deficiency gone
+            Teeth.SetActive(false);
         }
         if (VitaA >= 20 && VitaB >= 20 && VitaC >= 20 && VitaA <= 80 && VitaB <= 80 )
         {
             HeadRender.sprite = HeadHappy;
+        }
+        if (VitaA == 0 || VitaB == 0 || VitaC == 0 || VitaA == 100 || VitaB == 100)
+        {
+            
         }
     }
 
